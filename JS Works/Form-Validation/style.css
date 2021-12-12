@@ -51,13 +51,14 @@ h2{
 }
 .form-control small{
     border-color: rgb(204, 53, 53);
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
-    visibility: hidden;
+    display: none;
 }
-.form-control.error input{
-    visibility: visible;
+.form-control.error small{
+    display: block;
+    color: red;
 }
 .form button{
     background-color: rgb(45, 138, 175);

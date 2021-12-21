@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Time Schedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Time Schedule
+  </button>
+<!--select schedule-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Schedule Time</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="h4">When would you like datagatebd.com to serve you?</div>
+        <div><h6 class="h6-title"> Select your prefer date </h6></div>
+        <div class="row m__schedule__card justify-content-center option-list">
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_0">00</h1><p id="day_0">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_1">00</h1><p id="day_1">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_2">00</h1><p id="day_2">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_3">00</h1><p id="day_3">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_4">00</h1><p id="day_4">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_5">00</h1><p id="day_5">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_6">00</h1><p id="day_6">sun</p></button></div>
+        </div>
+        <div data-v-461b1757="" id="ScheduleTime" class="m_time">
+          <h6 class="h6-title">
+            Select your prefer time
+          </h6>
+          <div class="m__time__container container">
+            <div class="row">
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    10 - 11
+                  </span> <span class="m_time__card__median">AM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    11 - 12
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    12 - 1
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    1 - 2
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    2 - 3
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    3 - 4
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    4 - 5
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    5 - 6
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    6 - 7
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    7 - 8
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    8 - 9
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    9 - 10
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='game'>
+  <div id='container'>
+      <div id='board'>
+          <div class='emptyTile' id='NW' onClick='placeTile("NW")'></div>
+          <div class='emptyTile' id='N' onClick='placeTile("N")'></div>
+          <div class='emptyTile' id='NE' onClick='placeTile("NE")'></div>
+          <div class='emptyTile' id='W' onClick='placeTile("W")'></div>
+          <div class='emptyTile' id='C' onClick='placeTile("C")'></div>
+          <div class='emptyTile' id='E' onClick='placeTile("E")'></div>
+          <div class='emptyTile' id='SW' onClick='placeTile("SW")'></div>
+          <div class='emptyTile' id='S' onClick='placeTile("S")'></div>
+          <div class='emptyTile' id='SE' onClick='placeTile("SE")'></div>
+      </div>
+  </div>
+
+  <div id='scores'>
+      <div class='score' id='Score1'> Player 1: <br/> <span id='pOne' class='num'>0</span></div>
+      <div class='score' id='Score2'> Player 2: <br/> <span id='pTwo' class='num'>0</span></div>
+  </div>
+</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script>
+    $('.emptyTile').click(function () {
+    if (currentPlayer == 0) {
+        $(this).removeClass('emptyTile');
+        $(this).addClass('cross');
+        currentPlayer = 1;
+    } else {
+        $(this).removeClass('emptyTile');
+        $(this).addClass('nought');
+        currentPlayer = 0;
+    }});
+  </script>
+</body>
+
+</html>

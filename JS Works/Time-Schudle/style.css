@@ -1,0 +1,53 @@
+.m__schedule__card{
+    text-align: center;
+    margin:auto !important;
+}
+.m__schedule__card button{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1.2px solid rgba(230, 20, 135, 0.918);
+    margin: 1;
+    padding: 10px;
+    height: 80px;
+    max-width: 90px!important;
+    min-width: 80px;
+}
+.m__schedule__card button h1 {
+    color: #c71f66;
+    font-weight: 400;
+    margin: 0;
+    font-size: 32px;
+}
+.m__schedule__card button p {
+    text-transform: uppercase;
+    color: rgba(0,0,0,.4);
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+.m_time {
+  margin-top: 30px;
+}
+.m__time__container {
+  max-width: 600px;
+  margin: 10px auto;
+}
+.m_time__card{
+  width: 104px;
+  background-color: #fff;
+}
+.m_time__card__time{
+  color: #c71f66;
+}
+.m_time__card__median{
+  color: #c71f66;
+}
+.option {
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+.option-selected {
+  background-color: #839a0b;
+  color: #FFFFFF;
+}

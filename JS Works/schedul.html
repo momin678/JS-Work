@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Time Schedule</title>
+<style>
+    .m__schedule__card{
+        text-align: center;
+        margin:auto !important;
+    }
+    .m__schedule__card button{
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1.2px solid rgba(230, 20, 135, 0.918);
+        margin: 1;
+        padding: 10px;
+        height: 80px;
+        max-width: 90px!important;
+        min-width: 80px;
+    }
+    .m__schedule__card button h1 {
+        color: #c71f66;
+        font-weight: 400;
+        margin: 0;
+        font-size: 32px;
+    }
+    .m__schedule__card button p {
+        text-transform: uppercase;
+        color: rgba(0,0,0,.4);
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0;
+    }
+    .m_time {
+      margin-top: 30px;
+    }
+    .m__time__container {
+      max-width: 600px;
+      margin: 10px auto;
+    }
+    .m_time__card{
+      width: 104px;
+      background-color: #fff;
+    }
+    .m_time__card__time{
+      color: #c71f66;
+    }
+    .m_time__card__median{
+      color: #c71f66;
+    }
+    .option {
+      background-color: #FFFFFF;
+      padding: 5px;
+    }
+    .option-selected {
+      background-color: #839a0b;
+      color: #FFFFFF;
+    }
+</style>
+</head>
+
+<body>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Time Schedule
+  </button>
+<!--select schedule-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Schedule Time</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="h4">When would you like datagatebd.com to serve you?</div>
+        <div><h6 class="h6-title"> Select your prefer date </h6></div>
+        <div class="row m__schedule__card justify-content-center option-list">
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_0"></h1><p id="day_0">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_1"></h1><p id="day_1">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_2"></h1><p id="day_2">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_3"></h1><p id="day_3">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_4"></h1><p id="day_4">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_5"></h1><p id="day_5">sun</p></button></div>
+            <div class="m-2 option" onclick="select(event)"><button type="button" class="btn btn-secondary"><h1 id="date_6"></h1><p id="day_6">sun</p></button></div>
+        </div>
+        <div data-v-461b1757="" id="ScheduleTime" class="m_time">
+          <h6 class="h6-title">
+            Select your prefer time
+          </h6>
+          <div class="m__time__container container">
+            <div class="row">
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    10 - 11
+                  </span> <span class="m_time__card__median">AM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    11 - 12
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    12 - 1
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    1 - 2
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    2 - 3
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    3 - 4
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    4 - 5
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    5 - 6
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    6 - 7
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    7 - 8
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    8 - 9
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+              <div class="col-3" style="padding: 5px 7px !important;"><button type="button"
+                  class="btn m_time__card regular-paragraph btn-secondary"><span class="m_time__card__time">
+                    9 - 10
+                  </span> <span class="m_time__card__median">PM</span></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script>
+      function GetDates(startDate, daysToAdd) {
+        var aryDates = [];
+        for (var i = 0; i <= daysToAdd; i++) {
+          var currentDate = new Date();
+          currentDate.setDate(startDate.getDate() + i);
+          aryDates.push(DayAsString(currentDate.getDay()) + ", " + currentDate.getDate());
+            var date_value= "date_"+i;
+            var day_value= "day_"+i;
+            $("#"+date_value).html(currentDate.getDate());
+            $("#"+day_value).html(DayAsString(currentDate.getDay()));
+        }
+        return aryDates;
+      }
+      function DayAsString(dayIndex) {
+        var weekdays = new Array(6);
+        weekdays[0] = "Sunday";
+        weekdays[1] = "Monday";
+        weekdays[2] = "Tuesday";
+        weekdays[3] = "Wednesday";
+        weekdays[4] = "Thursday";
+        weekdays[5] = "Friday";
+        weekdays[6] = "Saturday";
+        return weekdays[dayIndex];
+      }
+      var startDate = new Date();
+      console.log(startDate.getHours());
+      var aryDates = GetDates(startDate, 7);
+      function select(e) {
+        // Unset selected class from other options
+        const selected = document.querySelectorAll('.option-list .option-selected');
+        selected.forEach(function(el) {
+          el.classList.remove('option-selected');
+        });
+        e.target.classList.add('option-selected');
+      }
+    </script>
+</body>
+
+</html>

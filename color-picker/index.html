@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+</head>
+<body>
+    <div>
+        <h1 id="changeColor">Name: Md. Mominul Haque</h1>
+        <input type="text" name="" id="hexaNumber">
+        <br>
+        <br>
+        <input type="color" id="color">
+    </div>
+    <script>
+        var hexaNumber = document.getElementById("hexaNumber");
+        var color = document.getElementById("color");
+        color.addEventListener("input", function(){
+            var inputColor = color.value;
+            hexaNumber.value = inputColor;
+            document.getElementById("changeColor").style.color = inputColor;
+        });
+    </script>
+</body>
+</html>

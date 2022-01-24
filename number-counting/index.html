@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counting</title>
+    <style>
+        .div1{
+            height: 250px;
+            width: 30%;
+            font-size: 1.5rem;
+            color: white;
+            background-color: rebeccapurple;
+            text-align: center;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h3>Total Project</h3>
+        <h5 id="num1"></h5>
+    </div>
+    <div class="div1">
+        <h3>Daily Visitor</h3>
+        <h5 id="num2"></h5>
+    </div>
+    <div class="div1">
+        <h3>Total User</h3>
+        <h5 id="num3"></h5>
+    </div>
+    <script>
+        // for project
+        var count_1 = 0;
+        var project = setInterval(project, 10) // first permiter is function name and 2nd permiter is time
+        function project(){
+            count_1++;
+            document.getElementById("num1").innerHTML=count_1;
+            if(count_1 == 128){
+                clearInterval(project);
+            }
+        }
+        // for daily visitor
+        var count_2 = 0;
+        var daily_visitor = setInterval(dailyVisitor, 10);
+        function dailyVisitor(){
+            count_2++;
+            document.getElementById("num2").innerHTML = count_2;
+            if(count_2 == 354){
+                clearInterval(daily_visitor);
+            }
+        }
+        // for total visitor
+        var count_3 = 0;
+        var total_visitor = setInterval(totalVisitor, 10);
+        function totalVisitor(){
+            count_3 = count_3+ 100;
+            document.getElementById('num3').innerHTML = count_3;
+            if(count_3 == 45000){
+                clearInterval(total_visitor);
+            }
+
+        }
+    </script>
+</body>
+</html>

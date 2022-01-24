@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <style>
+        .navbar{
+            background-color: rebeccapurple;
+            text-align: center;
+            padding: 20px;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-right: 25px;
+            color: white;
+        }
+        .active{
+            background-color: red;
+            color: white !important;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div>
+        <h1>Contact Page</h1>
+    </div>
+    <script>
+        var a_item = document.querySelectorAll("a");
+        var currentLocation = location.href;
+        for(var i=0; i<=a_item.length; i++){
+            if(a_item[i].href === currentLocation){
+                a_item[i].className = "active";
+            };
+        }
+    </script>
+</body>
+</html>

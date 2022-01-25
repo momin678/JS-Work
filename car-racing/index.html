@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing</title>
+</head>
+<body>
+    <button id="butStart">Start</button>
+    <button id="butStop">Stop</button>
+    <br><br>
+    <div class="car-img">
+        <img src="car-racing.jpg" alt="" srcset="" width="220" height="220" id="carImg">
+    </div>
+    <script>
+        var carImg = document.getElementById("carImg");
+        var butStart = document.getElementById("butStart");
+        var butStop = document.getElementById("butStop");
+        var carStrat;
+        var m = 0;
+        butStart.addEventListener("click", function(){
+            carStrat = setInterval(runStart, 100);
+            function runStart(){
+                if(m == 1000){
+                    clearInterval(carStrat);
+                    m=0;
+                }else{
+                    m+=10;
+                    carImg.style.marginLeft = m+"px";
+                }
+            }
+        });
+        butStop.addEventListener("click", function(){
+            clearInterval(carStrat);
+        });
+    </script>
+</body>
+</html>

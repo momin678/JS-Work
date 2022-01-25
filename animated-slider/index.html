@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated-slider</title>
+</head>
+<body>
+    <img src="img1.jpg" id="myImg" width="400" alt="" srcset="">
+    <script>
+        var totalImg = ['img1.jpg','img2.jpg','img3.jpg','img4.jpg'];
+        var my_img = document.getElementById('myImg'); 
+        var index_number = -1;
+        function myImageChange(){
+            index_number++;
+            if(index_number >= totalImg.length){
+                index_number = 0;
+                my_img.src = totalImg[index_number];
+            }else{
+                my_img.src = totalImg[index_number];
+            }
+            setTimeout("myImageChange()", 2000);
+        }
+        window.onload = myImageChange();
+    </script>
+</body>
+</html>

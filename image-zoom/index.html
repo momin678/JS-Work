@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-zoom</title>
+    <style>
+        .all-img{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="all-img">        
+        <div>
+            <img src="img1.jpg" alt="" srcset="" height="300" width="500" id="mainImg">
+        </div>
+        <img src="img2.jpg" width="125" height="125" alt="" srcset=""  onclick="changeImg(this.src)">
+        <img src="img3.jpg" width="125" height="125" alt="" srcset=""  onclick="changeImg(this.src)">
+        <img src="img4.jpg" width="125" height="125" alt="" srcset=""  onclick="changeImg(this.src)">
+        <img src="img5.jpg" width="125" height="125" alt="" srcset=""  onclick="changeImg(this.src)">
+    </div>
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        function changeImg(src){
+            mainImg.src = src;
+        }
+    </script>
+</body>
+</html>

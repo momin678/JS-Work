@@ -1,0 +1,42 @@
+.modal{
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    box-shadow: 5px 4px 7px black;
+    position: fixed;
+    left: 500px;
+    top: 100px;
+    padding: 10px;
+    display: none;
+    transition: .5s;
+}
+.modal.show{
+    display:inline;
+}
+.modal-title{
+    text-align: center;
+    border-bottom: 2px solid black ;
+    margin: 10px 0;
+}
+.modal-body{
+    text-align: center;
+    margin: 10px 0;
+}
+.modal-footer{
+    margin: 10px 0;
+    text-align: center;
+}
+.close{
+    background-color: red;
+    color: white;
+    margin-top:15px;
+}
+.modal-open{
+    text-align: center;
+}
+.open{
+    margin-top: 25rem;
+    font-size: 25px;
+    border-radius: 5px;
+}

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>single-type-script</title>
+    <title>multiple type animation</title>
     <style>
         body{
-            background-color: rgba(66, 58, 58, 0.308);
+            background-color: blueviolet;
         }
         h1{
             text-align: center;
-            margin-top: 100px;
+            color: white;
+            margin-top: 200px;
         }
         h1::after{
             border-right: 2px solid black;
             content: '';
-            left: 10px;
             position: relative;
-            animation: blink .7s infinite;
+            animation: blink .5s infinite;
         }
         @keyframes blink {
             0%{
@@ -31,18 +31,7 @@
     </style>
 </head>
 <body>
-    <h1 id="text"></h1>
-    <script>
-        var text = document.querySelector("#text");
-        var title = "Learn with Md. Mominul Haque";
-        var index = 0;
-        setInterval(print_title, 500);
-        function print_title(){
-            text.innerHTML = title.slice(0, index++);
-            if(index>title.length){
-                index = 0;
-            }
-        }
-    </script>
+    <h1 id="showText"></h1>
+    <script src="main.js"></script>
 </body>
 </html>

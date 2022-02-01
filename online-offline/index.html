@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show online or offline</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 200px;
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <script>
+        var title = document.getElementById('title');
+        window.addEventListener('online', set);
+        window.addEventListener('offline', set);
+        function set(){
+            if(navigator.onLine){
+                title.innerHTML = "You are Online";
+                title.style.color = "green";
+            }else{                
+                title.innerHTML = "You are offline";
+                title.style.color = "red";
+            }
+        }
+            set();
+    </script>
+</body>
+</html>

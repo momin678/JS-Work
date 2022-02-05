@@ -18,13 +18,13 @@
             <div class="card-title">
                 <h3>Name: Blue Rose</h3>
                 <h3>Quantity: 2pc</h3>
-                <h3 class="price">Price: 499 TK.</h3>
+                <h3 class="price">Price: TK. <span id="price1">499</span></h3>
                 <span class="quantity">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    <input type="button" value="0" class="inputQuantity">
-                    <i class="fa fa-minus" aria-hidden="true"></i>
+                    <i class="fa fa-plus" aria-hidden="true" onclick="increament('incDec1', 'price1', 'priceShow1')"></i>
+                    <input type="button" value="0" class="inputQuantity" id="incDec1">
+                    <i class="fa fa-minus" aria-hidden="true" onclick="decreament('incDec1', 'price1', 'priceShow1')"></i>
                 </span>
-                <h3>Sub-total: 00Tk</h3>
+                <h3>Sub-total: Tk. <span id="priceShow1">00</span></h3>
             </div>
         </div>
         <div class="clear"></div>
@@ -36,13 +36,13 @@
             <div class="card-title">
                 <h3>Name: Blue Rose</h3>
                 <h3>Quantity: 2pc</h3>
-                <h3 class="price">Price: 399 TK.</h3>
+                <h3 class="price">Price: TK. <span id="price2">329</span></h3>
                 <span class="quantity">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    <input type="button" value="0" class="inputQuantity">
-                    <i class="fa fa-minus" aria-hidden="true"></i>
+                    <i class="fa fa-plus" aria-hidden="true" onclick="increament('incDec2', 'price2', 'priceShow2')"></i>
+                    <input type="button" value="0" class="inputQuantity" id="incDec2">
+                    <i class="fa fa-minus" aria-hidden="true" onclick="decreament('incDec2', 'price2', 'priceShow2')"></i>
                 </span>
-                <h3>Sub-total: 00Tk</h3>
+                <h3>Sub-total: Tk. <span id="priceShow2">00</span></h3>
             </div>
         </div>
         <div class="clear"></div>
@@ -50,17 +50,19 @@
     </div>
     <div class="fixed">
         <h2 class="total">Total Amount of Flower</h2>
-        <h3>Flower Amount: TK. 000</h3>
-        <h3>Delivery: TK. 50</h3>
+        <h3>Flower Amount: TK. <span id="flowerAmount">000</span></h3>
+        <h3>Delivery: TK. <span id="deliveryCharge">50</span></h3>
         <h3>Tax & Vat: TK. 00</h3>
-        <h2 class="amount">Total Amount: TK. 000</h2>
+        <h3 class="amount">Total Amount: TK. <span id="totalAmount">000</span></h3>
+        <p class="notification">If You Buy more than 1000 TK Flower You can apply for Discount. <span id="discountCode"></span></p>
         <div class="copon">
-            <input type="text" class="copon-number">
-            <button class="copon-button">Apply</button>
+            <input type="text" class="copon-number disable" id="copon">
+            <button class="copon-button disable" id="coupnApply">Apply</button>
         </div>
+        <p id="coponResult" class=""></p>
         <div class="clear"></div>
         <hr class="hr-style">
-        <h3>Grond Total: TK. 00</h3>
+        <h3>Grand Total: TK. <span id="grandTotal">00</span></h3>
     </div>
     <script src="script.js"></script>
 </body>

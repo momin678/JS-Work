@@ -14,7 +14,7 @@
 }
 .fixed{
     width: 400px;
-    height: 300px;
+    height: 350px;
     background-color: white;
     float: left;
     box-sizing: border-box;
@@ -102,6 +102,14 @@
     color: grey;
     padding: 10px;
 }
+.fixed .notification{
+    color: grey;
+    margin: 0 20px;
+
+}
+.fixed #discountCode{
+    color: cornflowerblue;
+}
 .fixed .amount{
     margin-left: 20px;
 }
@@ -126,13 +134,52 @@
     border-top-right-radius: 4px;
     box-sizing: border-box;
     border-left: none;
-    /* background-color: rgb(124, 119, 119); */
     margin-left: -5px;
-    cursor: pointer;
     width: 50px;
+    cursor: pointer;
 
+}
+.fixed .copon .disable{
+    pointer-events: none;
+}
+.fixed .coponResultFlase{
+    margin-left: 15px;
+    color: red;
+}
+.fixed .coponResultrue{
+    margin-left: 15px;
+    color: green;
 }
 .fixed h3{
     margin: 10px 20px;
     color: cornflowerblue;
 }
+@media screen and (max-width: 480px) {
+    .container{
+        height: auto;
+
+    }
+    .container .card{
+        display: block;
+    }
+    .container .card .card-img{
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 4px 5px 5px black;
+        text-align: center;
+        padding: 10px;
+    }
+    .container .card .card-title{
+        text-align: center;
+    }
+    .fixed{
+        width: 400px;
+        height: 350px;
+        background-color: white;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 150px;
+        box-shadow: 4px 5px 5px black;
+        text-align: center;
+    }
+  }

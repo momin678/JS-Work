@@ -1,5 +1,5 @@
 /**
- * 1.  DOM Selection
+ * 1. DOM Selection
  * 2. Event Listner
  * 3. Back Validation
  * 4. Creating Element

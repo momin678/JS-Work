@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page-text-animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .bg{
+            background-image: url('bg-img.jpg');
+            height: 550px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container-one{
+            display: flex;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: scale(0.1);
+        }
+        .section{
+            padding: 25px;
+        }
+        .container-active{
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+    </div>
+    <div class="container-one" id="containerOne">
+        <div class="section-one section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+            </p>
+        </div>
+        <div class="section-two section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+            </p>
+        </div>
+    </div>
+    <div class="container-one">
+        <div class="section-three section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+            </p>
+        </div>
+        <div class="section-four section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in molestias, sapiente, quia inventore molestiae aliquam eum perspiciatis fuga expedita sunt, corporis nulla quos nobis? Eum labore cupiditate voluptatem sit?
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

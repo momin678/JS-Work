@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Copy, Pest and Cut</title>
+</head>
+<body>
+    <!-- Copy section start -->
+    <input type="text" id="copyText" value="Name: Md. Mominul Haque">
+    <button id="copyButton">Copy button</button>
+    <!-- Copy section end -->
+    <br>
+    <br>
+    <!-- Cut section start -->
+    <input type="text" id="CutText" value="Name: Md. Mominul Haque">
+    <button id="CutButton">Cut button</button>
+    <!-- Cut section end -->
+    <br>
+    <br>
+    <!-- Paste section start -->
+    <input type="text" id="pasteText" value="">
+    <button id="pasteButton">Paste button</button>
+    <!-- Paste section end -->
+    <script>
+        // text copy and show by alert
+        var copyText = document.getElementById('copyText');
+        var copyButton = document.getElementById('copyButton');
+        copyButton.addEventListener('click', function(){
+            navigator.clipboard.writeText(copyText.value);
+            alert(copyText.value+" text copy successfully");
+        });
+        // text cut and show by alert
+        var cutText = document.getElementById("CutText");
+        var cutButton = document.getElementById("CutButton");
+        cutButton.addEventListener("click", function(){
+            navigator.clipboard.writeText(cutText.value);
+            alert(cutText.value+" text cut successfully");
+            cutText.value = "";
+        });
+        // text paste and show by alert
+        var pasteText = document.getElementById("pasteText");
+        var pasteButton = document.getElementById("pasteButton");
+        pasteButton.addEventListener('click', function(){
+            pasteText.value = "";
+            navigator.clipboard.readText()
+            .then(function(text){
+                pasteText.value = text;
+            });
+        });
+
+    </script>
+</body>
+</html>

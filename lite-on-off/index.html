@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light On Off</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+        .light-img{
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            margin-right: 50px;
+        }
+        #on{
+            background-color: red;
+            font-size: 1.5rem;
+            color: white;
+        }
+        #off{
+            background-color: green;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .light-btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title"><h1>Now light Off</h1></div>
+    <div class="light-img">
+        <img src="light-off.jpg" alt="" id="light_1" width="130" height="200">
+        <img src="light-off.jpg" alt="" id="light_2" width="130" height="200">
+        <img src="light-off.jpg" alt="" id="light_3" width="130" height="200">
+        <img src="light-off.jpg" alt="" id="light_4" width="130" height="200">
+        <img src="light-off.jpg" alt="" id="light_5" width="130" height="200">
+    </div>
+    <br>
+    <br>
+    <div class="light-btn">
+        <button id="on" onclick="lightBtn(1)">On</button>
+        <button id="off" onclick="lightBtn(0)">Off</button>
+    </div>
+    <script>
+        function lightBtn(match){
+            var pic;
+            for(var i=1; 1<=5; i++){
+                if(match==0){
+                    pic = 'light-on.jpg';
+                }else{
+                    pic = 'light-off.jpg'
+                }
+                var light = document.getElementById('light_1');
+                light.src = pic;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -56,7 +56,7 @@
 //     })
 
 let files = [], // will be store images
-button = document.querySelector('.top button'), // uupload button
+button = document.querySelector('.top button'), // upload button
 form = document.querySelector('form'), // form ( drag area )
 container = document.querySelector('.container'), // container in which image will be insert
 text = document.querySelector('.inner'), // inner text of form
